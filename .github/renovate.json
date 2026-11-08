@@ -1,0 +1,32 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":disableDependencyDashboard"
+  ],
+  "baseBranchPatterns": [
+    "dev"
+  ],
+  "timezone": "Europe/Bucharest",
+  "schedule": [
+    "* 0-5 1 * *"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "packageRules": [
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "groupName": "GitHub Actions",
+      "commitMessagePrefix": "CI:"
+    },
+    {
+      "matchManagers": [
+        "homeassistant-manifest"
+      ],
+      "rangeStrategy": "widen"
+    }
+  ]
+}
