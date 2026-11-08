@@ -27,6 +27,15 @@
         "homeassistant-manifest"
       ],
       "rangeStrategy": "widen"
+    },
+    {
+      "matchManagers": [
+        "github-actions"
+      ],
+      "matchDepNames": [
+        "python"
+      ],
+      "enabled": false
     }
   ]
 }
