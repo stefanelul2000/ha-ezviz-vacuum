@@ -1,5 +1,10 @@
 # Changelog
 
+## Unreleased
+
+- pycryptodome is now required as `>=3.23.0` instead of exactly 3.23.0, so it
+  no longer clashes with the version Home Assistant itself installs.
+
 ## 1.2.1
 
 - The integration no longer reloads every time it saves a renewed EZVIZ
